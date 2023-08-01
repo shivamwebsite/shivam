@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome link is been attached to use logo  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Shivam-Fitness</title>
+    <link rel="stylesheet" href="WEB.CSS">
+    <script src="WEB.JS"></script>
+    <style>
+        .left {
+            display: inline-block;
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+        }
+        .right div{
+            display: inline-block;
+            margin-right: 40px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color:lightgrey;
+        }
+        a.active{
+            text-decoration: underline;
+            /* background-color: brown; */
+            color: darkred;
+        }
+        button:hover{
+            background-color: darkgrey;
+            color: black;
+        }
+    </style>
+</head>
+
+<body id="formfullbody" background="2.jpg.jpg">
+    <a href="WEB.html" target="_blank">
+        <h3>NOTES1</h3>
+    </a>
+    <a href="addlink,image.html" target="_blank">
+        <h3>NOTES2</h3>
+    </a>
+    <H2 align="center">MADE BY SHIVAM</H2>
+    <header>
+        <div class="left">
+            <h3 align="center">
+                <!-- copied from "font awesome.com"  -->
+                <i class="fa-solid fa-user"></i>
+                <a href="profile.html" target="_blank">
+                    <font face="lato" size="5">PROFILE</font>
+                </a>
+            </h3>
+        </div>
+        <div class="right">
+            <h3>
+                <font face="cinzel" size="4">
+                    <div><a class="" href="5new.html">HOME</a></div>
+                    <div><a href="contact.html">CONTACT US</a></div>
+                    <div><a href="index.html">LOG OUT</a></div>
+                </font>
+            </h3>
+        </div>
+    </header>
+    <img src="https://source.unsplash.com/700x400/?office" alt="error"><br><br>
+    <form id="form" action="backend.php">
+        <div>
+            <label for="name">NAME:</label>
+            <!-- "id" stands for identifier it should be unique and it should not be repeated for others -->
+            <input type="text" name="myname" id="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">AGE:</label>
+            <input type="number" name="myage" id="age" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">EMAIL ID:</label>
+            <input type="email" name="emailid" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="no.">MOBILE NUMBER:</label>
+            <input type="number" name="myphonenumber" id="no." required>
+        </div>
+        <br>
+        <div>
+            <label for="elegible">ELEGIBLE:</label>
+            <input type="checkbox" name="myelegibility" id="elegible">
+        </div>
+        <br>
+        <div>
+            <label for="study">STUDYING:</label>
+            <input type="checkbox" name="mystatus" id="study" checked>
+        </div>
+        <br>
+        <div>
+            <label for="gen">GENDER:</label>
+            male<input type="radio" name="mygender">female<input type="radio" name="mygender">other<input type="radio"
+                name="mygender" id="gen">
+        </div>
+        <br>
+        <div>
+            <label for="date">DATE:</label>
+            <input type="date" name="dob" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="time">TIME:</label>
+            <input type="time" name="mytime" id="time">
+        </div>
+        <br>
+        <div>
+            <label for="core">COURSE:</label>
+            <select name="course" id="core">
+                <option value="none">SELECT</option>
+                <option value="science">BCA</option>
+                <option value="science">BTECH</option>
+                <option value="science">BSC</option>
+                <option value="science">DIPLOMA</option>
+            </select>
+        </div>
+        <br>
+        <details>
+            <summary>REQUIRED DOCUMENT</summary>
+            id <br>
+            adhar <br>
+            pan card <br>
+        </details><br>
+        <label for="about">ABOUT YOU:</label>
+        <div>
+            <textarea name="write about yourself" id="about" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit" class="submitButton">Submit</button>
+            <button type="reset" class="submitButton">Resetnow</button>
+            <!-- <input type="Submit" name="SUBMIT" class="submitButton"> -->
+            <!-- <input type="Reset" value="Resetnow" class="submitButton"> -->
+        </div>
+    </form>
+</body>
+
+</html>

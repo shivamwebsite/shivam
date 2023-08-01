@@ -1,0 +1,88 @@
+<!--        ANIMATIONS -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: rgb(219, 128, 110);
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            text-align: center;
+            align-items: center;
+            animation-name: harry1;
+            animation-duration: 7s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes shivam {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 200px;
+                background-color: yellow;
+                color: darkblue;
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+                background-color: green;
+                color: lightcoral;
+            }
+
+            75% {
+                top: 200px;
+                left: 0px;
+                background-color: blue;
+                color: white;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                
+            }
+
+        }
+
+        @keyframes harry1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Hello</h1>
+        </div>
+    </div>
+</body>
+
+</html>

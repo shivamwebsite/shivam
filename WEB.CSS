@@ -1,0 +1,44 @@
+p{
+    background-color: black;
+    color: aqua;
+    /* if arial is not there then it will go ahead with next which is helvetica */
+    font-family: Arial, Helvetica, sans-serif;
+    /* it tells the size of the words  */
+    font-size: 33px;
+    /* it tells that difference should be given between two lines  */
+    line-height: 1em;
+    /* to make the letters bold,itallic or ..  */
+    font-weight:bold ;
+    font-style: italic;
+}
+h2{
+    background-color: yellow;
+     color: rgb(233, 14, 14)
+}
+#form
+{
+    /* background-color: lightcoral; */
+    color: rgb(131, 255, 7);
+}
+/* #formfullbody
+{
+    background-color: rgb(164, 129, 224);
+} */
+img{
+    border-radius: 10px;
+    border: 2px solid darkblue;
+    padding: 4px;
+
+}
+.submitButton
+{
+    height: 40px;
+    width: 10%;
+    border-radius: 20px;
+    border:none;
+    /* padding: px; */
+    outline: none;
+    color: white;
+    font-family: Comic Sans Ms;
+    background-color: blue;
+}

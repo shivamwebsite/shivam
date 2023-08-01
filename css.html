@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduce css</title>
+    <!-- jo style sbsa last ma hoga usko preference sbsa pahala mila ga -->
+    <!-- internal style css  -->
+    <style>
+        /* element selector */
+        p{
+            background-color:lightcoral ;
+            color:deepskyblue !important;
+            border: 2px solid red;
+            /* to get the preference first we use "!important" tag  */
+        }
+        /* id selector */
+        #shivam{
+         background-color: red;
+        }
+        /* class selector */
+        .bgblue{
+            background-color: blue;
+        }
+        /* grouping selector */
+        span,footer{
+            background-color: pink;
+        }
+    </style>
+    <!-- external style css  -->
+    <link rel="stylesheet" href="WEB.css">
+</head>
+<body>
+    <h2>inline css</h2>
+    <h2>internal css</h2>
+    <h2>external css</h2>
+    <p style="background-color: yellowgreen; color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, alias!</p>
+    <p id="shivam">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum mollitia eligendi tempora similique illum asperi</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="bgblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur.</p>
+    <span>this is new line</span>
+    <footer>this iss end point</footer>
+</body>
+</html>

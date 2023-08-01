@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Shivam-Fitness</title>
+    <style>
+        .edit {
+            /* height: 300px; */
+            background-color: #0c0244;
+            border: 4px solid rgb(18, 243, 15);
+            border-radius: 10px;
+            color: #676798;
+
+        }
+
+        .bottomheader {
+            font-size: 20px;
+            padding-left: 30px;
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header img {
+            height: 240px;
+            width: 240px;
+            border-radius: 100%;
+            border: 4px solid rgb(230, 65, 10);
+            padding: 3px;
+        }
+
+        .topheader {
+            color: #0020e0;
+            font-size: 45px;
+            font-weight: bolder;
+            /* border-bottom: 1px solid red; */
+            /* padding-left: 200px; */
+            /* padding-bottom: 40px; */
+            font-family: Comic Sans Ms;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .head {
+            font-size: 30px;
+            font-style: lato;
+            padding-left: 20px;
+            color: rgb(77 6 105);
+        }
+
+        .logo {
+            background-color: #b5e5a8;
+            border: 3px solid red;
+            border-radius: 100%;
+            padding: 10px;
+        }
+
+        .para {
+            /* height: 150px; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            padding: 0px 15px 0px 70px;
+            /*top right bottom: left */
+            color: rgb(28 164 2);
+        }
+        .box1 {
+             border: 2.5px solid red;
+            width: 280px;
+            height: 40px;
+        }
+
+        .box2 {
+            border: 2.5px solid red;
+            width: 90px;
+        }
+
+        .box3 {
+            border: 2.5px solid red;
+            width: 130px;
+        }
+
+        .box4 {
+            border: 2.5px solid red;
+            width: 300px;
+        }
+
+        .box5 {
+            border: 2.5px solid red;
+            width: 320px;
+        }
+
+        .box6 {
+            border: 2.5px solid red;
+            width: 170px;
+        }
+
+        .bo1 {
+            border: 2.5px solid red;
+            width: 280px;
+            height: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .bo2 {
+            border: 2.5px solid red;
+            width: 90px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .bo3 {
+            border: 2.5px solid red;
+            width: 130px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .bo4 {
+            border: 2.5px solid red;
+            width: 300px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .bo5 {
+            border: 2.5px solid red;
+            width: 320px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .bo6 {
+            border: 2.5px solid red;
+            width: 170px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        thead{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #488af8;
+        }
+        table{
+            text-align: center;
+            border: 2px solid red;
+            margin: 50px 100px 50px 100px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .para img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            border: 4px solid rgb(230, 65, 10);
+            padding: 3px;
+            margin: 0px 70px 0px 0px;
+        }
+        body {
+            border:  2px solid black;
+            margin: 20px 20px 20px 20px;
+            background-color: #bdc3e1;
+        }
+
+        .fix {
+            width: 290px;
+            height: 450px;
+            text-align: center;
+            margin: 0px 10px 0px 10px;
+            display: inline-block;
+        }
+
+        .para1 img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            border: 4px solid rgb(230, 65, 10);
+            padding: 3px;
+            margin: 40px 0px 40px 0px;
+        }
+
+        .span {
+            height: 50px;
+            width: 290px;
+            font-weight: bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .social i {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color:rgba(16,8,231,1);
+            border: 2px solid white;
+            border-radius: 50%;
+            /* padding: 2px; */
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            margin: 30px 15px 30px 0;
+            
+        }
+        a:hover{
+            /* background-color: lawngreen; */
+            color: chartreuse;
+        }
+        header{
+            position: sticky;
+            top: 5px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+        @media(max-width:851px)
+        {
+            header{
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="edit">
+        <img align="right" ; src="shiv.jpeg" alt="error">
+        <h1 class="topheader">SHIVAM PRASAD SHAW</h1>
+        <div class="bottomheader">DOB:-06/05/2002</div>
+        <div class="bottomheader">Address:-24/1 Dr.H.K.Chaterjee Lane,Ghusuri Howrah -711107</div>
+        <div class="bottomheader">Gmail Id:-shivamshaw878@gmail.com</div>
+        <div class="bottomheader">Contact No. :-9903119703</div>
+    </header>
+    <section>
+        <div class="head">
+            <h1><i class="fa-solid fa-globe logo"></i> CAREER OBJECTIVE</h1>
+        </div>
+        <div class="para">
+            <p>A Motivated Individual With In-Depth Knowledge Of Languages And Development Tools, Seeking Position In A
+                Growth-Oriented Company Where I Can Use My Skills To The Advantage Of The Company While Having The Scope
+                To Develop My Own Skills. </p>
+        </div>
+    </section>
+    <section>
+        <div class="head">
+            <h1><i class="logo fa-solid fa-user-graduate"></i> EDUCATION HISTORY</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="box1">INSTIITUTE</th>
+                    <th class="box2">DEGREE</th>
+                    <th class="box3">PASSING YEAR</th>
+                    <th class="box4">BOARD/UNIVERSITY</th>
+                    <th class="box5">SUBJECT</th>
+                    <th class="box6">MARKS OBTAINED</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bo1"><a href="https://www.nit.ac.in/" target="_blank">Narula Institute Of Technology<br>(NIT)</a></td>
+                    <td class="bo2">B.Tech</td>
+                    <td class="bo3">2026</td>
+                    <td class="bo4">MAKAUT<br>(Maulana Abul Kalam Azad University And Technolog)</td>
+                    <td class="bo5">CSBS<br>(Computer Science And Bussiness System)</td>
+                    <td class="bo6">98%</td>
+                </tr>
+                <tr>
+                    <td class="bo1"><a href="http://stdenis.in/" target="_blank">St.Denis School<br>(St.DS)</a></td>
+                    <td class="bo2">12th</td>
+                    <td class="bo3">2021</td>
+                    <td class="bo4">ISC<br>(Indian School Certificate)</td>
+                    <td class="bo5">PCM<br>(Physics,Chemistry,Math,Computer,English)</td>
+                    <td class="bo6">78%</td>
+                </tr>
+                <tr>
+                    <td class="bo1"><a href="https://rosebudschoolliluah.in/" target="_blank">Rose Bud School<br>(RBL)</a></td>
+                    <td class="bo2">10th</td>
+                    <td class="bo3">2019</td>
+                    <td class="bo4">ICSE<br>(Indian Certificate of Secondary Education)</td>
+                    <td class="bo5">PCM<br>(Physics,Chemistry,Math,Computer,English)</td>
+                    <td class="bo6">75%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <div class="head">
+            <h1><i class="logo fa-solid fa-user-tie"></i> PROFESSIONAL SKILLS</h1>
+        </div>
+        <div class="para">
+
+            <ol>
+                <img align="right" ; src="shiv.jpeg" alt="error">
+                <br>
+                <li>Financial Modelling From EDX.</li>
+                <li>Artificial Intelligence And Machine Learning Course From TCS.</li>
+                <li>Data Analaytics From COURSERA.</li>
+                <li>Programming In Python,C,C++,Java.</li>
+                <li>Ms.Excel Course From TS-Computex.</li>
+                <li>Data Science Course From NPTEL.</li>
+                <br>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <div class="head">
+            <h1><i class="logo fa-solid fa-trophy"></i> ACHIEVEMENTS</h1>
+        </div>
+        <div class="para">
+            <ul>
+                <ol>
+                    <img align="left" ; src="shiv.jpeg" alt="error">
+                    <li>Won 1st Position In Inter School Carrom Competition.</li>
+                    <li>Participated In Smart India Hackathon.</li>
+                    <li>Participated In Inter College Chess Competition.</li>
+                    <li>Participated In Summer Education Camp At Guru Nanak Institute Of Technolog,Bangkok.</li>
+                    <li>Participated In Inter School Cricket Championship.</li>
+                    <li>Won 1st Position In Inter School Football Competition.</li>
+                    <br>
+                </ol>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="head">
+            <h1><i class="logo fa-solid fa-users"></i> REFERENCES</h1>
+        </div>
+        <div style="text-align: center;">
+            <div class="fix">
+                <div class="para1"">
+                <img src=" shiv.jpeg" alt="error">
+                </div>
+                <div class="span">Maitreyi Ray Kanjilal (Principal)</div>
+                <div class="span">033 2563777</div>
+                <div class="span">info@nit.ac.in</div>
+            </div>
+            <div class="fix">
+                <div class="para1">
+                <img src=" shiv.jpeg" alt="error">
+                </div>
+                <div class="span">Ricky Gupta (Principal)</div>
+                <div class="span">9830445410</div>
+                <div class="span">st.denis183@gmail.com</div>
+            </div>
+            <div class="fix">
+                <div class="para1"">
+                <img src=" shiv.jpeg" alt="error">
+                </div>
+                <div class="span">Josha Vimcett (Principal)</div>
+                <div class="span">8448449773</div>
+                <div class="span">rblschool_1967@yahoo.com</div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color:black;color: white;text-align: center;">
+        <a href="contact.html" target="_blank"> <h1>Contact Me</h1></a>
+            <span class="social"><i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i></span>
+    </footer>
+</body>
+</html>

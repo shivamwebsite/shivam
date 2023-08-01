@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="check.css">
+  <title>table</title>
+  <style>
+     a:hover{
+        background-color: rgb(114, 72, 238);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      a.active{
+        background-color:lightgreen;
+        text-decoration: underline;
+      }
+        .contain8 {
+            /* border: 1px solid red; */
+            margin: 50px 120px 50px 120px;
+            padding: 20px;
+            height: 600px;
+        }
+
+        .contain1 {
+            /* border: 1px solid red; */
+            /* height: 600px; */
+            width: 490px;
+            display: inline-block;
+            /* padding-right: 90px; */
+            text-align: center;
+            /* font-size: 20px; */
+        }
+
+        .contain2 {
+            /* border: 1px solid red; */
+            /* height: 600px; */
+            /* width: 720px; */
+            /* display:block; */
+            float: right;
+            margin:auto;
+        }
+
+        .contain3 {
+            /* border: 1px solid red; */
+            /* height: 600px; */
+            /* width: 720px; */
+            /* display:block; */
+            float: left;
+        }
+
+        .contain4 {
+            /* border: 1px solid red; */
+            /* height: 600px; */
+            width: 490px;
+            display: inline-block;
+            /* padding-left: 90px; */
+            text-align: center;
+            /* font-size: 20px; */
+        }
+
+        img {
+            height: 550px;
+            width: 720px;
+            border-radius: 10px;
+            /* border: 2px solid red; */
+        }
+
+        .contain8 h2 {
+            color: rgb(53, 57, 53);
+            line-height: 2em;
+            font-size:23px;
+            font-weight: bold;
+        }
+
+        .contain8 h1 {
+            text-decoration: underline;
+            font-size: 40px;
+            margin: 33px 0px 33px 0px;
+            font-weight: bold;
+            /* border-bottom: 0.002px solid gray; */
+            /* color: gray; */
+        }
+
+        .btn {
+            font-size: 18px;
+            padding: 10px;
+            color: white;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: blue;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            border: 1px solid rgb(86 3 255);
+            padding: 3.5px;
+        }
+        .nam{
+            font-size: 28px;
+            margin-left: 20px;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            /* border-right: 1px solid red; */
+
+        }
+        .nav{
+            font-size:20px;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            border-left: 2px solid white;
+            margin-left: 20px;
+            margin-right: 300px;
+        }
+        .navbar{
+            margin-left: 20px;
+        }
+       .cont{
+        margin: 0px 100px 0px 100px;
+        padding: 20px;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+       }
+       .button{
+        font-size: 15px;
+        color: grey;
+        border: none;
+        padding: 5px 15px 5px 15px;
+        border-radius: 5px;
+        background-color: white;
+       }
+       .button:hover{
+        color: black;
+        font-weight: bold;
+       }
+       a{
+        text-decoration: none;
+       }
+       header::before{
+            background: url(6.jpeg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 2500px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+  </style>
+</head>
+
+<body>
+    <header style="background-color: rgb(58, 166, 201);">
+        <div class="cont">
+            <a href="profile.html"> <img src="shiv.jpeg" alt="error"></a>
+            <div class="nam">
+                <a href="5new.html"><span style="color: red;"">Shivam-Fitness</span></a>
+            </div>
+            <div class="nav">
+            <nav>
+                <a style=" color: black;" class="navbar">About</a>
+                <a style="color: black;" class="navbar active">Services</a>
+                <a style="color: black;" class="navbar" href="contact.html">Contact Us</a>
+                <a style="color: black;" class="navbar" href="index.html">Log Out</a>
+                </nav>
+            </div>
+            <div>
+                <a href="6forms.html" target="_blank"><button class="button">Enrollement <i class="fa-sharp fa-solid fa-arrow-right"></i></button></a>
+            </div>
+        </div>
+    </header>
+  <section>
+    <div class="contain8">
+        <div class="contain1">
+            <h1>CARDIO</h1>
+            <h2>All of these aforementioned cardio machines are designed to improve cardiovascular health, meaning
+                it increases your heart and respiratory rate to strengthen your heart muscle and build endurance.
+                But some also build strength, Summerville says. So, think about what you want out of your workout.
+            </h2><br><br>
+            <div>
+                <button class="btn">VIRTUAL TOUR</button>
+            </div>
+        </div>
+        <div class="contain2">
+            <img class="img" align="center" ; src="Group-20.png" alt="error">
+        </div>
+    </div>
+</section>
+<section>
+    <div class="contain8">
+        <div class="contain4">
+            <h1>FREE WEIGHTS</h1>
+            <h2>For the average person, free weights offer many of the same benefits as machines, plus some. While you can typically lift more weight in the same exercise on a machine due to their fixed nature, free weights give you more bang for your buck in terms of muscles worked.
+            </h2><br><br>
+            <div>
+                <button class="btn">VIRTUAL TOUR</button>
+            </div>
+        </div>
+        <div class="contain3">
+            <img class="img" align="center" ; src="Group-21.png" alt="error">
+        </div>
+    </div>
+</section>
+<section>
+    <div class="contain8">
+        <div class="contain1">
+            <h1>STRENGHT EQUIPMENT</h1>
+            <h2>Resistance machines have a predetermined range of motion, meaning you can only lift and lower the weight in the correct way. This helps you to learn the exercise, build up strength and learn to engage the right muscles before progressing onto free weights.
+            </h2><br><br>
+            <div>
+                <button class="btn">VIRTUAL TOUR</button>
+            </div>
+        </div>
+        <div class="contain2">
+            <img class="img" align="center" ; src="Group-22.png" alt="error">
+        </div>
+    </div>
+</section>
+</body>
+</html>
