@@ -133,10 +133,10 @@ p {
 @media(max-width:400px){
     .social i{
         /* border: none; */
-        margin: 30px 5px 30px 5px;
+        margin: 30px 3px 30px 3px;
     }
     .topHeader{
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 
