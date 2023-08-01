@@ -137,6 +137,11 @@ p {
     }
     .topHeader{
         font-size: 22px;
+        position: relative;
+        left: 50px;
+    }
+    .formbox{
+        padding: 50px 50px 40px 50px;
     }
 }
 
