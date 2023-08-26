@@ -24,7 +24,15 @@
             /* border: 1px solid red; */
             margin: 50px 120px 50px 120px;
             padding: 20px;
-            height: 600px;
+            /* height: 600px; */
+            display: flex;
+            /* grid-template-areas:  */
+            /* '.contain1 .contain1 .contain2 .contain2'; */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            /* flex-direction: column; */
         }
 
         .contain1 {
@@ -34,6 +42,7 @@
             display: inline-block;
             /* padding-right: 90px; */
             text-align: center;
+            text-align: justify;
             /* font-size: 20px; */
         }
 
@@ -42,8 +51,8 @@
             /* height: 600px; */
             /* width: 720px; */
             /* display:block; */
-            float: right;
-            margin: auto;
+            /* float: right; */
+            /* margin: auto; */
         }
 
         .contain3 {
@@ -51,7 +60,7 @@
             /* height: 600px; */
             /* width: 720px; */
             /* display:block; */
-            float: left;
+            /* float: left; */
         }
 
         .contain4 {
@@ -60,7 +69,7 @@
             width: 490px;
             display: inline-block;
             /* padding-left: 90px; */
-            text-align: center;
+            text-align: justify;
             /* font-size: 20px; */
         }
 
@@ -158,14 +167,18 @@
             text-decoration: none;
         }
 
-        header::before {
-            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+        .backimg {
+            position: relative;
+        }
+
+        .backimg::before {
+            background: url('https://source.unsplash.com/1600x900/?gym machine') center center/cover;
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 3600px;
+            height: 100%;
             z-index: -1;
             opacity: 0.4;
         }
@@ -174,13 +187,19 @@
             .nav {
                 margin-right: 150px;
             }
+
+            .contain8 {
+                /* border: 1px solid red; */
+                margin: 50px 0px 50px 0px;
+            }
         }
+
         @media(max-width:707px) {
-    .nav a{
-        /* margin-right: 1px; */
-        display: block;
-    }
-}
+            .nav a {
+                /* margin-right: 1px; */
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -205,13 +224,16 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="backimg">
         <div class="contain8">
             <div class="contain1">
                 <h1>CARDIO</h1>
-                <h2>All of these aforementioned cardio machines are designed to improve cardiovascular health, meaning
-                    it increases your heart and respiratory rate to strengthen your heart muscle and build endurance.
-                    But some also build strength, Summerville says. So, think about what you want out of your workout.
+                <h2>All of these aforementioned cardio machines are designed to improve cardiovascular health,
+                    meaning
+                    it increases your heart and respiratory rate to strengthen your heart muscle and build
+                    endurance.
+                    But some also build strength, Summerville says. So, think about what you want out of your
+                    workout.
                 </h2><br><br>
                 <div>
                     <button class="btn">VIRTUAL TOUR</button>
@@ -222,28 +244,31 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="backimg">
         <div class="contain8">
+            <div class="contain3">
+                <img class="img" align="center" ; src="Group-21.png" alt="error">
+            </div>
             <div class="contain4">
                 <h1>FREE WEIGHTS</h1>
-                <h2>For the average person, free weights offer many of the same benefits as machines, plus some. While
-                    you can typically lift more weight in the same exercise on a machine due to their fixed nature, free
+                <h2>For the average person, free weights offer many of the same benefits as machines, plus some.
+                    While
+                    you can typically lift more weight in the same exercise on a machine due to their fixed nature,
+                    free
                     weights give you more bang for your buck in terms of muscles worked.
                 </h2><br><br>
                 <div>
                     <button class="btn">VIRTUAL TOUR</button>
                 </div>
             </div>
-            <div class="contain3">
-                <img class="img" align="center" ; src="Group-21.png" alt="error">
-            </div>
         </div>
     </section>
-    <section>
+    <section class="backimg">
         <div class="contain8">
             <div class="contain1">
                 <h1>STRENGHT EQUIPMENT</h1>
-                <h2>Resistance machines have a predetermined range of motion, meaning you can only lift and lower the
+                <h2>Resistance machines have a predetermined range of motion, meaning you can only lift and lower
+                    the
                     weight in the correct way. This helps you to learn the exercise, build up strength and learn to
                     engage the right muscles before progressing onto free weights.
                 </h2><br><br>
