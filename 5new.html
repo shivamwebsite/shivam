@@ -25,11 +25,12 @@
       font-family: Arial, Helvetica, sans-serif;
       border-left: 2px solid white;
       margin-left: 20px;
-      margin-right: 300px;
+      margin-right: 250px;
+      color: white;
     }
 
     .navbar {
-      margin-left: 20px;
+      /* margin-left: 20px; */
     }
 
     .contain {
@@ -59,9 +60,12 @@
     a {
       text-decoration: none;
     }
-
+   .nav a{
+    padding:5px 20px;
+    border-radius: 20px;
+   }
     a:hover {
-      background-color: rgb(114, 72, 238);
+      background-color: rgb(249, 248, 252);
       text-decoration: underline;
       /* color: blue; */
       cursor: pointer;
@@ -69,7 +73,7 @@
 
     a.active {
       color: yellow;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     @media(max-width:996px) {
@@ -99,7 +103,7 @@
     <div class="contain">
       <a href="profile.html"> <img src="shiv.jpeg" alt="error"></a>
       <div class="nam">
-        <a class="active"><span style="color: red;"">Shivam-Fitness</span></a>
+        <a class="active" style="color: red; padding: 2px; border-radius: 20px;"><span >Shivam-Fitness</span></a>
             </div>
             <div class=" nav">
             <nav>
