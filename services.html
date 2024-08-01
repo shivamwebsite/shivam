@@ -52,23 +52,6 @@
             /* font-size: 20px; */
         }
 
-        .contain2 {
-            /* border: 1px solid red; */
-            /* height: 600px; */
-            /* width: 720px; */
-            /* display:block; */
-            /* float: right; */
-            /* margin: auto; */
-        }
-
-        .contain3 {
-            /* border: 1px solid red; */
-            /* height: 600px; */
-            /* width: 720px; */
-            /* display:block; */
-            /* float: left; */
-        }
-
         .contain4 {
             /* border: 1px solid red; */
             /* height: 600px; */
@@ -116,37 +99,6 @@
             background-color: blue;
         }
 
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 100%;
-            border: 1px solid rgb(86 3 255);
-            padding: 3.5px;
-        }
-
-        .nam {
-            font-size: 24px;
-            margin-left: 17px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            /* border-right: 1px solid red; */
-
-        }
-
-        .nav {
-            font-size: 17px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            border-left: 2px solid white;
-            margin-left: 15px;
-            margin-right: 250px;
-            color: white;
-        }
-
-        .navbar {
-            font-family: Arial, Helvetica, sans-serif;
-            /* margin-left: 10px;c:\Users\91990\Downloads\service.jpg */
-        }
 
         .cont {
             margin: 0px 80px 0px 80px;
@@ -156,20 +108,6 @@
             flex-wrap: wrap;
             text-align: center;
             align-items: center;
-        }
-
-        .button {
-            font-size: 15px;
-            color: grey;
-            border: none;
-            padding: 5px 15px 5px 15px;
-            border-radius: 5px;
-            background-color: white;
-        }
-
-        .button:hover {
-            color: black;
-            font-weight: bold;
         }
 
         a {
@@ -193,16 +131,26 @@
         }
 
         @media(max-width:996px) {
-            .nav {
+            .nav nav{
+                display: block;
                 margin-right: 150px;
             }
-
+            .cont {
+                margin: 0px 20px 0px 20px;
+            }
+            .nav{
+                margin-top: 20px;
+                margin-right: 150px;
+            }
+            .button{
+                margin-top: 20px;
+            }
+        }
             .contain8 {
                 /* border: 1px solid red; */
                 margin: 50px 0px 50px 0px;
                 padding-left: 20px;
             }
-        }
 
         @media(max-width:707px) {
             .nav a {
@@ -213,7 +161,30 @@
             .contain8 h1 {
                 font-size: 27px;
             }
+            .cont {
+                margin: 0px 10px 0px 10px;
+                /* font-size: ; */
+            }
+
+            .h {
+                font-size: 18px;
+            }
         }
+        .nav nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media(max-width:1265px) {
+            .cont {
+                justify-content: center;
+            }
+        }
+        @media(max-width:1370px) {
+           .button{
+            margin-top: 20px;
+           } 
+            }
     </style>
 </head>
 
@@ -222,8 +193,9 @@
         <div class="cont">
             <a href="profile.html"> <img src="shiv.jpeg" alt="error"></a>
             <div class="nam">
-                <a href="5new.html"><span style="color: red;"">Shivam-Fitness</span></a>
+                <a href="5new.html"><span style="color: red;" class="h">Shivam-Fitness</span></a>
             </div>
+            <i class="fa-solid fa-bars handle" style="color: white" onclick="handlebaar()"></i>
             <div class=" nav">
                         <nav>
                             <a style=" color: black;" class="navbar">About</a>
@@ -231,6 +203,15 @@
                             <a style="color: black;" class="navbar" href="contact.html">Contact Us</a>
                             <a style="color: black;" class="navbar" href="index.html">Log Out</a>
                         </nav>
+            </div>
+            <div class="handlecont" id="sidebar">
+                <a style=" color: black;" class="navbar"> <span>ABOUT</span></a>
+                <a style="color: black;" class="navbar" href="services.html"><span>SERVICES</span></a>
+                <a style="color: black;" class="navbar" href="contact.html"> <span>CONTACT US</span></a>
+                <a style="color: black;" class="navbar" href="index.html"><span>LOG OUT</span></a>
+                <!-- <span>ENROLLMENT</span> -->
+                <a href="6forms.html" target="_blank"><span>ENROLLMENT   <i
+                  class="fa-sharp fa-solid fa-arrow-right"></i></span></a>       
             </div>
             <div>
                 <a href="6forms.html" target="_blank"><button class="button">Enrollement <i
@@ -295,6 +276,24 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function handlebaar() {
+          const sidebar = document.getElementById('sidebar');
+          if (sidebar.classList.contains('active')) {
+            sidebar.classList.remove('active');
+            document.querySelector(".handle").style.position = "relative";
+            document.querySelector(".handle").style.right = "0px";
+            document.querySelector(".handle").style.top = "0px";
+          } else {
+            sidebar.classList.add('active');
+            document.querySelector(".handle").style.position = "absolute";
+            document.querySelector(".handle").style.right = "30px";
+            document.querySelector(".handle").style.top = "40px";
+          }
+        }
+      </script>
+    
 </body>
 
 </html>

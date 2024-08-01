@@ -9,69 +9,20 @@
     <link rel="stylesheet" href="check.css">
     <title>Shivam-Fitness</title>
     <style>
-    .nam {
-      font-size: 24px;
-      margin-left: 17px;
-      font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
-      /* border-right: 1px solid red; */
-
-    }
-
-    .nav {
-      font-size: 17px;
-      font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
-      border-left: 2px solid white;
-      margin-left: 15px;
-      margin-right: 250px;
-      color: white;
-    }
-
-    .navbar {
-      font-family: Arial, Helvetica, sans-serif;
-      /* margin-left: 20px; */
-    }
-
-    .cont {
-      margin: 0px 80px 0px 80px;
-      padding: 20px;
-      /* border: 1px solid red; */
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-      align-items: center;
-    }
-
-        .button {
-            font-size: 15px;
-            color: grey;
-            border: none;
-            padding: 5px 15px 5px 15px;
-            /* margin-top: 20px; */
-            border-radius: 5px;
-            background-color: white;
+        .cont {
+            margin: 0px 80px 0px 80px;
+            padding: 20px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
         }
 
-        .button:hover {
-            color: black;
-            font-weight: bold;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .nav a {
-            padding: 5px 20px;
-            border-radius: 20px;
-        }
-
-        a:hover {
-            background-color: rgb(249, 248, 252);
-            text-decoration: underline;
-            /* color: blue; */
-            cursor: pointer;
+        @media(max-width:1265px) {
+            .cont {
+                justify-content: center;
+            }
         }
 
         a.active {
@@ -138,10 +89,15 @@
         }
 
         @media(max-width:996px) {
-            .nav {
+            .nav nav{
+                display: block;
                 margin-right: 150px;
             }
+            .cont {
+                margin: 0px 50px 0px 50px;
+            }
         }
+
 
         @media(max-width:707px) {
             .nav a {
@@ -149,6 +105,35 @@
                 display: block;
             }
 
+            .cont {
+                margin: 0px 10px 0px 10px;
+                /* font-size: ; */
+            }
+
+            .h {
+                font-size: 18px;
+            }
+        }
+
+        .nav nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 900px) {
+            .handle {
+                display: block;
+                font-size: 24px;
+                margin-left: auto;
+                margin-right: 10px;
+                cursor: pointer;
+                z-index: 2000;
+            }
+
+            .nav nav,
+            .button {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -158,15 +143,25 @@
         <div class="cont">
             <a href="profile.html"> <img src="shiv.jpeg" alt="error"></a>
             <div class="nam">
-                <a href="5new.html"><span style="color: red;"">Shivam-Fitness</span></a>
+                <a href="5new.html" style="color: red;" class="h"><span>Shivam-Fitness</span></a>
             </div>
+            <i class=" fa-solid fa-bars handle" style="color: white" onclick="handlebaar()"></i>
             <div class=" nav">
-                        <nav>
-                            <a style=" color: black;" class="navbar">About</a>
-                            <a style="color: black;" class="navbar" href="services.html">Services</a>
-                            <a style="color: black;" class="navbar active">Contact Us</a>
-                            <a style="color: black;" class="navbar" href="index.html">Log Out</a>
-                        </nav>
+                <nav>
+                    <a style=" color: black;" class="navbar">About</a>
+                    <a style="color: black;" class="navbar" href="services.html">Services</a>
+                    <a style="color: black;" class="navbar active">Contact Us</a>
+                    <a style="color: black;" class="navbar" href="index.html">Log Out</a>
+                </nav>
+            </div>
+            <div class="handlecont" id="sidebar">
+                <a style=" color: black;" class="navbar"> <span>ABOUT</span></a>
+                <a style="color: black;" class="navbar" href="services.html"><span>SERVICES</span></a>
+                <a style="color: black;" class="navbar" href="contact.html"> <span>CONTACT US</span></a>
+                <a style="color: black;" class="navbar" href="index.html"><span>LOG OUT</span></a>
+                <!-- <span>ENROLLMENT</span> -->
+                <a href="6forms.html" target="_blank"><span>ENROLLMENT <i
+                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
             </div>
             <div>
                 <a href="6forms.html" target="_blank"><button class="button">Enrollement <i
@@ -206,6 +201,23 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function handlebaar() {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('active')) {
+                sidebar.classList.remove('active');
+                document.querySelector(".handle").style.position = "relative";
+                document.querySelector(".handle").style.right = "0px";
+                document.querySelector(".handle").style.top = "0px";
+            } else {
+                sidebar.classList.add('active');
+                document.querySelector(".handle").style.position = "absolute";
+                document.querySelector(".handle").style.right = "30px";
+                document.querySelector(".handle").style.top = "40px";
+            }
+        }
+    </script>
 </body>
 
 </html>
