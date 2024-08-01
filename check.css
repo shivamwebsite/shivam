@@ -5,6 +5,19 @@ header img {
     border: 4px solid rgb(86 3 255);
     padding: 3.5px;
 }
+@media (max-width: 500px) {
+  header img {
+    width: 100px;
+    height: 100px;
+}
+.h{
+  font-size: 15px;
+}
+.contain {
+  padding: 20px 10px 20px 10px;
+  /* font-size: ; */
+}
+}
 
 /* 5new last 4 image  */
 #shivam img {

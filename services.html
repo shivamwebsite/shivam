@@ -131,26 +131,30 @@
         }
 
         @media(max-width:996px) {
-            .nav nav{
+            .nav nav {
                 display: block;
                 margin-right: 150px;
             }
+
             .cont {
                 margin: 0px 20px 0px 20px;
             }
-            .nav{
+
+            .nav {
                 margin-top: 20px;
                 margin-right: 150px;
             }
-            .button{
+
+            .button {
                 margin-top: 20px;
             }
         }
-            .contain8 {
-                /* border: 1px solid red; */
-                margin: 50px 0px 50px 0px;
-                padding-left: 20px;
-            }
+
+        .contain8 {
+            /* border: 1px solid red; */
+            margin: 50px 0px 50px 0px;
+            padding-left: 20px;
+        }
 
         @media(max-width:707px) {
             .nav a {
@@ -161,15 +165,17 @@
             .contain8 h1 {
                 font-size: 27px;
             }
+
             .cont {
                 margin: 0px 10px 0px 10px;
+                padding: 20px 10px 20px 10px;
                 /* font-size: ; */
             }
-
-            .h {
-                font-size: 18px;
-            }
+        .h {
+            font-size: 15px;
         }
+        }
+
         .nav nav {
             display: flex;
             flex-direction: row;
@@ -180,11 +186,12 @@
                 justify-content: center;
             }
         }
+
         @media(max-width:1370px) {
-           .button{
-            margin-top: 20px;
-           } 
+            .button {
+                margin-top: 20px;
             }
+        }
     </style>
 </head>
 
@@ -197,12 +204,12 @@
             </div>
             <i class="fa-solid fa-bars handle" style="color: white" onclick="handlebaar()"></i>
             <div class=" nav">
-                        <nav>
-                            <a style=" color: black;" class="navbar">About</a>
-                            <a style="color: black;" class="navbar active">Services</a>
-                            <a style="color: black;" class="navbar" href="contact.html">Contact Us</a>
-                            <a style="color: black;" class="navbar" href="index.html">Log Out</a>
-                        </nav>
+                <nav>
+                    <a style=" color: black;" class="navbar">About</a>
+                    <a style="color: black;" class="navbar active">Services</a>
+                    <a style="color: black;" class="navbar" href="contact.html">Contact Us</a>
+                    <a style="color: black;" class="navbar" href="index.html">Log Out</a>
+                </nav>
             </div>
             <div class="handlecont" id="sidebar">
                 <a style=" color: black;" class="navbar"> <span>ABOUT</span></a>
@@ -210,8 +217,8 @@
                 <a style="color: black;" class="navbar" href="contact.html"> <span>CONTACT US</span></a>
                 <a style="color: black;" class="navbar" href="index.html"><span>LOG OUT</span></a>
                 <!-- <span>ENROLLMENT</span> -->
-                <a href="6forms.html" target="_blank"><span>ENROLLMENT   <i
-                  class="fa-sharp fa-solid fa-arrow-right"></i></span></a>       
+                <a href="6forms.html" target="_blank"><span>ENROLLMENT <i
+                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
             </div>
             <div>
                 <a href="6forms.html" target="_blank"><button class="button">Enrollement <i
@@ -279,21 +286,21 @@
 
     <script>
         function handlebaar() {
-          const sidebar = document.getElementById('sidebar');
-          if (sidebar.classList.contains('active')) {
-            sidebar.classList.remove('active');
-            document.querySelector(".handle").style.position = "relative";
-            document.querySelector(".handle").style.right = "0px";
-            document.querySelector(".handle").style.top = "0px";
-          } else {
-            sidebar.classList.add('active');
-            document.querySelector(".handle").style.position = "absolute";
-            document.querySelector(".handle").style.right = "30px";
-            document.querySelector(".handle").style.top = "40px";
-          }
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('active')) {
+                sidebar.classList.remove('active');
+                document.querySelector(".handle").style.position = "relative";
+                document.querySelector(".handle").style.right = "0px";
+                document.querySelector(".handle").style.top = "0px";
+            } else {
+                sidebar.classList.add('active');
+                document.querySelector(".handle").style.position = "absolute";
+                document.querySelector(".handle").style.right = "30px";
+                document.querySelector(".handle").style.top = "40px";
+            }
         }
-      </script>
-    
+    </script>
+
 </body>
 
 </html>
