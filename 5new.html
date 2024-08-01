@@ -10,29 +10,6 @@
   <title>Shivam-Fitness</title>
   <style>
     /* box-sizing: border-box;      by using this we can fix the box size  */
-    .nam {
-      font-size: 24px;
-      margin-left: 17px;
-      font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
-      /* border-right: 1px solid red; */
-
-    }
-
-    .nav {
-      font-size: 17px;
-      font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
-      border-left: 2px solid white;
-      margin-left: 15px;
-      margin-right: 250px;
-      color: white;
-    }
-
-    .navbar {
-      font-family: Arial, Helvetica, sans-serif;
-      /* margin-left: 20px; */
-    }
 
     .contain {
       margin: 0px 80px 0px 80px;
@@ -44,33 +21,6 @@
       align-items: center;
     }
 
-    .button {
-      font-size: 15px;
-      color: grey;
-      background-color: white;
-      border: none;
-      padding: 5px 15px 5px 15px;
-      border-radius: 5px;
-    }
-
-    .button:hover {
-      color: black;
-      font-weight: bold;
-    }
-
-    a {
-      text-decoration: none;
-    }
-   .nav a{
-    padding:5px 20px;
-    border-radius: 20px;
-   }
-    a:hover {
-      background-color: rgb(249, 248, 252);
-      text-decoration: underline;
-      /* color: blue; */
-      cursor: pointer;
-    }
 
     a.active {
       color: yellow;
@@ -89,13 +39,77 @@
         /* margin-right: 1px; */
         display: block;
       }
+      .contain {
+        margin: 0px 10px 0px 10px;
+        /* font-size: ; */
+      }
 
+      .h {
+        font-size: 18px;
+      }
     }
-    .main img:hover{
+   
+    .main img:hover {
       transform: translateX(250px) scale(4);
       z-index: 500;
       border: none;
       /* transform: */
+    }
+
+    .handle {
+      display: none;
+    }
+    @media(max-width:1265px) {
+      .contain{
+        justify-content: center;
+      }
+    }
+    @media (max-width: 900px) {
+      .handle {
+        display: block;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: 10px;
+        cursor: pointer;
+        z-index: 2000;
+      }
+
+      .nav,
+      .button {
+        display: none;
+      }
+    }
+
+    .handlecont {
+      display: none;
+      flex-direction: column;
+      border: 2px solid black;
+      width: 200px;
+      border-radius: 20px;
+      font-weight: bolder;
+      font-size: 15px;
+      color: black;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      /* Adjust based on your layout */
+      right: 10px;
+      z-index: 1000;
+    }
+
+    .handlecont span {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .handlecont span:hover {
+      background-color: #f1f1f1;
+    }
+
+    .active {
+      display: flex;
     }
   </style>
 </head>
@@ -105,15 +119,26 @@
     <div class="contain">
       <a href="profile.html"> <img src="shiv.jpeg" alt="error"></a>
       <div class="nam">
-        <a class="active" style="color: red; padding: 2px; border-radius: 20px;"><span >Shivam-Fitness</span></a>
-            </div>
-            <div class=" nav">
-            <nav>
-              <a style=" color: black;" class="navbar">About</a>
-              <a style="color: black;" class="navbar" href="services.html">Services</a>
-              <a style="color: black;" class="navbar" href="contact.html">Contact Us</a>
-              <a style="color: black;" class="navbar" href="index.html">Log Out</a>
-            </nav>
+        <a class="active" style="color: red; padding: 2px; border-radius: 20px;"><span
+            class="h">Shivam-Fitness</span></a>
+      </div>
+      <i class="fa-solid fa-bars handle" style="color: white" onclick="handlebaar()"></i> <i class="fa-solid fa-bars handle" style="color: white" onclick="handlebaar()"></i>
+      <div class=" nav">
+        <nav>
+          <a style=" color: black;" class="navbar">About</a>
+          <a style="color: black;" class="navbar" href="services.html">Services</a>
+          <a style="color: black;" class="navbar" href="contact.html">Contact Us</a>
+          <a style="color: black;" class="navbar" href="index.html">Log Out</a>
+        </nav>
+      </div>
+      <div class="handlecont" id="sidebar">
+          <a style=" color: black;" class="navbar"> <span>ABOUT</span></a>
+          <a style="color: black;" class="navbar" href="services.html"><span>SERVICES</span></a>
+          <a style="color: black;" class="navbar" href="contact.html"> <span>CONTACT US</span></a>
+          <a style="color: black;" class="navbar" href="index.html"><span>LOG OUT</span></a>
+          <!-- <span>ENROLLMENT</span> -->
+          <a href="6forms.html" target="_blank"><span>ENROLLMENT   <i
+            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>       
       </div>
       <div>
         <a href="6forms.html" target="_blank"><button class="button">Enrollement <i
@@ -211,7 +236,7 @@
                   class="w-3 h-3" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
-              </span>12 months  ₹147
+              </span>12 months ₹147
             </p>
             <p class="flex items-center text-gray-600 mb-2">
               <span
@@ -610,6 +635,23 @@
       </div>
     </div>
   </section>
+
+  <script>
+    function handlebaar() {
+      const sidebar = document.getElementById('sidebar');
+      if (sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+        document.querySelector(".handle").style.position = "relative";
+        document.querySelector(".handle").style.right = "0px";
+        document.querySelector(".handle").style.top = "0px";
+      } else {
+        sidebar.classList.add('active');
+        document.querySelector(".handle").style.position = "absolute";
+        document.querySelector(".handle").style.right = "30px";
+        document.querySelector(".handle").style.top = "40px";
+      }
+    }
+  </script>
 
 </body>
 

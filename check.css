@@ -26,155 +26,110 @@ header img {
     border: 2px solid red;
     padding: 4px;
 }
-
-/* LOGIN PAGE  */
-#bodystart {
-    background-image: url(7.jpeg);
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-p {
-    position: relative;
-    color: black;
-    font-size: 20px;
+.nam {
+    font-size: 24px;
+    margin-left: 17px;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    left: 5px;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-right: 1px solid red; */
 
-.topHeader {
-    font-size: 30px;
-    position: relative;
-    left: 15px;
-    bottom: 20px;
+  }
+
+  .nav {
+    font-size: 17px;
     font-weight: bold;
-    font-family: Comic Sans Ms;
-}
-
-.formbox {
-    display: flex;
-    position: relative;
-    padding: 50px 100px 40px 100px;
-    /* width: 400px; */
-    /* height: 470px; */
-    flex-direction: column;
-    justify-content: center;
-    border: 2px solid white;
-    box-shadow: 0px 0px 25px white;
-    border-radius: 20px;
-    backdrop-filter: blur(3px);
-}
-
-.formcontainer {
-    display: flex;
-    flex-direction: column;
-}
-
-.inputtext {
-    height: 40px;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    padding: 0 0 0 20px;
-    opacity: 90%;
-    color: black;
-    font-weight: bold;
-}
-
-::-webkit-input-placeholder {
-    color: grey;
-}
-
-.l {
-    position: relative;
-    top: -29px;
-    right: 20px;
-}
-
-.submitButton {
-    height: 40px;
-    width: 100%;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: 2px solid white;
+    margin-left: 15px;
+    margin-right: 250px;
     color: white;
-    font-weight: bold;
-    font-family: Comic Sans Ms;
-    background-color: black;
-}
+  }
 
-#forgotpw {
-    position: relative;
-    color: rgb(232, 244, 214);
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    left: 35px;
-}
+  .navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 20px; */
+  }
+  .button {
+    font-size: 15px;
+    color: grey;
+    background-color: white;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+  }
 
-.social i {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 50%;
-    font-size: 20px;
+  .button:hover {
     color: black;
+    font-weight: bold;
+  }
+
+  a {
     text-decoration: none;
-    margin: 30px 15px 30px 0;
-}
-@media(max-width:400px){
-    .social i{
-        /* border: none; */
-        margin: 30px 3px 30px 3px;
-    }
-    .topHeader{
-        font-size: 22px;
-        position: relative;
-        left: 50px;
-    }
-    .formbox{
-        padding: 50px 50px 40px 50px;
-    }
-}
+  }
 
-Button:hover {
+  .nav a {
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+
+  a:hover {
+    background-color: rgb(249, 248, 252);
+    text-decoration: underline;
+    /* color: blue; */
     cursor: pointer;
-    background-color: blue;
-    color: black;
-}
-
-@media(max-width:500px) {
-    .formbox {
-        height: 100vh;
-        width: 100vh;
-        border: none;
-        backdrop-filter: blur(2px);
+  }
+  .handle {
+    display: none;
+  }
+  @media(max-width:1265px) {
+    .contain{
+      justify-content: center;
     }
-}
+  }
+  @media (max-width: 900px) {
+    .handle {
+      display: block;
+      font-size: 24px;
+      margin-left: auto;
+      margin-right: 10px;
+      cursor: pointer;
+      z-index: 2000;
+    }
 
-@media(max-width:1486px) {
+    .nav,
     .button {
-        margin-top: 20px;
-       
+      display: none;
     }
-}
+  }
 
-@media(max-width:1374px) {
-    .nav {
-        margin-top: 20px;
-        margin-left: 1px;
-    }
-}
+  .handlecont {
+    display: none;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    /* Adjust based on your layout */
+    right: 10px;
+    z-index: 1000;
+  }
 
+  .handlecont span {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .handlecont span:hover {
+    background-color: #f1f1f1;
+  }
+
+  .active {
+    display: flex;
+  }
